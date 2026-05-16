@@ -1,0 +1,18 @@
+[package]
+name = "trace-diff"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+description = "Diff two agent traces semantically: align by event type + key, ignore timestamps and ids, return added/removed/changed steps. Zero deps beyond serde_json."
+authors = ["Mukunda Rao Katta <mukunda.vjcs6@gmail.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/MukundaKatta/trace-diff"
+homepage = "https://github.com/MukundaKatta/trace-diff"
+documentation = "https://docs.rs/trace-diff"
+readme = "README.md"
+keywords = ["trace", "diff", "agent", "replay", "regression"]
+categories = ["development-tools::debugging", "data-structures"]
+exclude = [".github/*", "target/*"]
+
+[dependencies]
+serde_json = "1"
